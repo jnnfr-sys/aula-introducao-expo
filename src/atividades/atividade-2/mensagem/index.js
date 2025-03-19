@@ -12,4 +12,3 @@ function Mensagem ({ titulo, children }) {
 }
 
 export default Mensagem;
-
