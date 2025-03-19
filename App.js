@@ -10,7 +10,7 @@ import Exemplo2 from './src/exemplos/ex-02';
 // Atividades
 import Atividade1 from './src/atividades/atividade-1';
 
-import Mensagem from './mensagem';
+
 
 export default function App() {
   return (
