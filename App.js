@@ -11,13 +11,13 @@ import Exemplo2 from './src/exemplos/ex-02';
 import Atividade1 from './src/atividades/atividade-1';
 import Atividade2 from './src/atividades/atividade-2';
 
-import Mensagem from './src/atividades/atividade-2';
+import Mensagem from './src/atividades/atividade-2/mensagem';
 
 export default function App() {
   return (
     <View style={styles.container}>
       <Atividade2/>
-      <Mensagem/>
+      
       <StatusBar style="light" />
       
     </View>

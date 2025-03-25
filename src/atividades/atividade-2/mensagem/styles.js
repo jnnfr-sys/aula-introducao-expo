@@ -21,6 +21,7 @@ const styles = StyleSheet.create({
         fontSize: RFPercentage(2.2),  
         color: '#fafafa', 
     }, 
+    
 });
 
 export default styles;

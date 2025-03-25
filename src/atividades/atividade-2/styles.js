@@ -3,10 +3,12 @@ import { RFPercentage } from 'react-native-responsive-fontsize';
 
 const styles = StyleSheet.create({
     container: {
+        flexGrow: 1,
         backgroundColor: '#fff', 
         padding: 10, 
-        flex: 1, 
+        //flex: 1, 
         alignItems: 'center', 
+        justifyContent: 'center',
         borderRadius: 20,
     }, 
     titulo: {
@@ -17,17 +19,17 @@ const styles = StyleSheet.create({
         borderColor: 'deepskyblue', 
         marginTop: 10, 
         marginBottom: 10, 
-        padding: 8, 
+        padding: 20, 
         width: '100%', 
-        height: 80, 
+        height: 90, 
         textAlign: 'center', 
         textAlignVertical: 'center', 
-        borderRadius: 20,
+        borderRadius: 15,
     }, 
     imagem: {
-        // height: RFPercentage(10), 
-        // width: RFPercentage(28), 
-        width: '80%',  
+        height: RFPercentage(10), 
+         width: RFPercentage(28), 
+        width: '75%',  
         resizeMode: 'contain', 
     },
 });
