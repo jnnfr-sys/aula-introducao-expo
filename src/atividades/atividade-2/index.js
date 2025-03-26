@@ -6,7 +6,7 @@ import img from '../../../assets/camiseta1.png';
 import img2 from '../../../assets/camiseta2.png';
 import img3 from '../../../assets/camiseta3.png'
 
-import Mensagem from './mensagem';
+import Card from './card';
 
 function Atividade2 () {
     return(
@@ -14,17 +14,17 @@ function Atividade2 () {
         <View style={styles.container}>
             <Text style={styles.titulo}>Atividade 2</Text>
  
-            <Mensagem titulo={'camiseta essentials'}>Você não clicou corretamente blablabla!
+            <Card titulo={'camiseta essentials'}>Você não clicou corretamente blablabla!
             <Image source={img} style={styles.imagem} />
-            </Mensagem>
+            </Card>
 
-            <Mensagem titulo={'SUCESSO'}>Acesso permitido
+            <Card titulo={'SUCESSO'}>Acesso permitido
             <Image source={img2} style={styles.imagem} />
-            </Mensagem>
+            </Card>
 
-            <Mensagem titulo={'AVISO'}>O tempo acabou!
+            <Card titulo={'AVISO'}>O tempo acabou!
             <Image source={img3} style={styles.imagem} />
-            </Mensagem>
+            </Card>
         </View>
         </ScrollView>
     );
