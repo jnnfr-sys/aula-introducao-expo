@@ -1,32 +1,23 @@
-import { View, Text, Image, ScrollView } from 'react-native'; 
+import { View, Text, Image,  } from 'react-native'; 
 
 import styles from './styles'; 
 
-import img from '../../../assets/camiseta1.png';
+import img1 from '../../../assets/camiseta1.png';
 import img2 from '../../../assets/camiseta2.png';
-import img3 from '../../../assets/camiseta3.png'
+import img3 from '../../../assets/camiseta3.png';
+import img4 from '../../../assets/camiseta4.png';
 
 import Card from './card';
 
 function Atividade2 () {
     return(
-        <ScrollView contentContainerStyle={styles.container}>
         <View style={styles.container}>
-            <Text style={styles.titulo}>Atividade 2</Text>
- 
-            <Card titulo={'camiseta essentials'}>Você não clicou corretamente blablabla!
-            <Image source={img} style={styles.imagem} />
-            </Card>
-
-            <Card titulo={'SUCESSO'}>Acesso permitido
-            <Image source={img2} style={styles.imagem} />
-            </Card>
-
-            <Card titulo={'AVISO'}>O tempo acabou!
-            <Image source={img3} style={styles.imagem} />
-            </Card>
+            <Text style={styles.titulo}> Atividade 2</Text>
+            <Card titulo={'Camiseta ADIDAS'} img={img1} valor={'250,00'}>Camiseta Essential azul claro e preto.</Card>
+            <Card titulo={'Camiseta preta Adidas'} img={img2} valor={'250,00'}>Camiseta Adidas Masculina.</Card>
+            <Card titulo={'Camiseta Branca'} img={img3} valor={'250,00'}>descrição.</Card>
+            <Card titulo={'Camiseta Vermelha'} img={img4} valor={'250,00'}>descrição.</Card>
         </View>
-        </ScrollView>
     );
 }
 
