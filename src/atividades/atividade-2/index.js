@@ -13,10 +13,10 @@ function Atividade2 () {
     return(
         <View style={styles.container}>
             <Text style={styles.titulo}> Atividade 2</Text>
-            <Card titulo={'Camiseta ADIDAS'} img={img1} valor={'250,00'}>Camiseta Essential azul claro e preto.</Card>
+            <Card titulo={'Camiseta ADIDAS'} img={img1} valor={'350,00'}>Camiseta Essential azul claro e preto.</Card>
             <Card titulo={'Camiseta preta Adidas'} img={img2} valor={'250,00'}>Camiseta Adidas Masculina.</Card>
-            <Card titulo={'Camiseta Branca'} img={img3} valor={'250,00'}>descrição.</Card>
-            <Card titulo={'Camiseta Vermelha'} img={img4} valor={'250,00'}>descrição.</Card>
+            <Card titulo={'Camiseta Branca'} img={img3} valor={'200,00'}>Camiseta Branca Adidas Masculina.</Card>
+            <Card titulo={'Camiseta Vermelha'} img={img4} valor={'150,00'}>Camisa Vermelha Lisa Adidas.</Card>
         </View>
     );
 }
