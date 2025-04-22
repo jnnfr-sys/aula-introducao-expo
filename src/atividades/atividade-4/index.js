@@ -1,41 +1,57 @@
-import React, { useState } from 'react';
-import {View, Text, StyleSheet, TextInput, TouchableOpacity} from 'react-native';
+import { useState } from 'react';
+import { View, Text, TextInput, TouchableOpacity } from 'react-native'; 
 
-import styles from '../atividade-4/styles';
+import styles from './styles'; 
 
-export default function Index(){
+function Atividade4 () { 
 
-  const [textoEscrito, setTextoEscrito] = useState('');
-  const [mensagem, setMensagem] = useState ('Texto programado');
+    const [nomeCompleto, setNomeCompleto] = useState('Aqui será apresentado o nome'); 
+    const [nome, setNome] = useState('');
+    const [sobrenome, setSobrenome] = useState(''); 
 
-  const ExibeTexto = () => {
-    setMensagem(textoEscrito);
-    setTextoEscrito('');
-  }
+    function xhandleExibeNome() {
+        setNomeCompleto(`${nome} ${sobrenome}`);
+        setNome('');
+        setSobrenome('');
+    }
+
+    const handleExibeNome = () => {
+        setNomeCompleto(`${nome} ${sobrenome}`);
+        setNome('');
+        setSobrenome('');
+    }
 
     return(
-        <View style={styles.container}> 
-          <Text style={styles.paragraph}>
-            Atividade 4
-          </Text>
+        <View style={styles.container}>
+            <Text style={styles.titulo}>Atividade 4</Text>
+            <Text style={styles.texto}>{nomeCompleto}</Text> 
+            <Text style={styles.label}>Nome</Text>
+            <TextInput 
+                // placeholder='Nome' 
+                style={styles.input} 
+                onChangeText={(v) => setNome(v)} 
+                value={nome}
+            />
+            <Text style={styles.label}>Sobrenome</Text>
+            <TextInput 
+                // placeholder='Sobrenome' 
+                style={styles.input} 
+                onChangeText={(v) => setSobrenome(v)} 
+                value={sobrenome}
+            />
+            
 
-          <Text style={styles.txtSaida}>
-            {mensagem}
-          </Text>
-
-          <Text></Text>
-          <TextInput 
-          style={styles.txtEntrada}
-          onChangeText={(entrada) => setTextoEscrito(entrada)}
-          value={textoEscrito}
-          />
-
-          <TouchableOpacity 
-          style={styles.button} onPress={ExibeTexto}>
-            <Text style={styles.textButton}>Exibir texto</Text>
-          </TouchableOpacity>
-
-
+            <TouchableOpacity 
+                style={styles.botao} 
+                onPress={handleExibeNome}
+            >
+                <Text style={styles.txtBotao}>
+                    Exibir nome completo
+                </Text>
+            </TouchableOpacity>
         </View>
     );
 }
+
+export default Atividade4;
+
