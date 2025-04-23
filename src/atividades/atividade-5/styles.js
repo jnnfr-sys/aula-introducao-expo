@@ -15,9 +15,19 @@ const styles = StyleSheet.create ({
         textAlign: 'center',
         color: '#000000',
     },
+    operadores:{
+        //flex: 1,
+        alignItems:'center',
+        flexDirection: 'row',
+        height: 50,
+        padding: 5,
+        justifyContent: 'center',
+        borderRadius:10,
+        margin: 2,
+    },
     txtSaida: {
-        margin: 6,
-        fontSize: 22,
+        margin: 8,
+        fontSize: 25,
         fontWeight:'bold',
         textAlign: 'center',
         color: '#e91e63',
@@ -34,13 +44,27 @@ const styles = StyleSheet.create ({
         marginTop: 10,
     
     },
+
     button: {
+        backgroundColor: '#e91e63',
+        height: 40,
+        width: RFPercentage(8),
+        justifyContent: 'center',
+        borderRadius: 10,
+        marginTop:20,
+        marginLeft: 5,
+        marginRight: 5,
+        padding: RFPercentage(1),
+    },
+
+    buttonZ: {
         backgroundColor: '#e91e63',
         height: 40,
         justifyContent: 'center',
         borderRadius:10,
         marginTop:20,
     },
+
     textButton:{
         fontSize: 22,
         color: '#ff80ab',

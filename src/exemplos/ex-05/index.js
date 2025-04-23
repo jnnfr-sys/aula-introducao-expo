@@ -49,6 +49,8 @@ function Exemplo5 (){
             <TouchableOpacity style={styles.button} onPress={() => Soma ()}>
                 <Text style={styles.textButton}> + </Text>
             </TouchableOpacity>
+
+            
         </View>
     );
 }
