@@ -3,7 +3,7 @@ import { RFPercentage } from 'react-native-responsive-fontsize';
 
 const styles = StyleSheet.create ({
     container: {
-        backgroundColor: '#ffff',
+        backgroundColor: '#ffffff',
         padding: 10,
         flex: 1,
         justifyContent: 'center',
@@ -30,14 +30,14 @@ const styles = StyleSheet.create ({
         fontSize: 25,
         fontWeight:'bold',
         textAlign: 'center',
-        color: '#e91e63',
+        color: '#8A2BE2',
     },
     txtEntrada: {
         borderWidth: 3,
         textAlign: 'center',
         fontSize: 16,
         fontWeight: 'bold',
-        borderColor: '#e91e63',
+        borderColor: '#8A2BE2',
         height: 45,
         color: 'Black',
         borderRadius: 10,
@@ -46,7 +46,7 @@ const styles = StyleSheet.create ({
     },
 
     button: {
-        backgroundColor: '#e91e63',
+        backgroundColor: '#8A2BE2',
         height: 40,
         width: RFPercentage(8),
         justifyContent: 'center',
@@ -58,7 +58,7 @@ const styles = StyleSheet.create ({
     },
 
     buttonZ: {
-        backgroundColor: '#e91e63',
+        backgroundColor: '#8A2BE2',
         height: 40,
         justifyContent: 'center',
         borderRadius:10,
@@ -73,7 +73,7 @@ const styles = StyleSheet.create ({
     textLabel:{
         fontSize:16,
         fontWeight: 'bold',
-        color: '#c51162'
+        color: '#8A2BE2'
     },
 });
 
