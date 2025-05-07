@@ -73,7 +73,7 @@ const styles = StyleSheet.create ({
     textLabel:{
         fontSize:16,
         fontWeight: 'bold',
-        color: '#8A2BE2'
+        color: '#8A2BE2',
     },
 });
 
