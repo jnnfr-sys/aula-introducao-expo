@@ -21,15 +21,20 @@ export default function Atividade6() {
     const mensagem = () => {
         if (imc < 18,5){
             return <Text>Abaixo do peso</Text>
-        } else if  (imc > 18,5 <= 24,9){
+        }
+        if (imc > 18,5 && imc <= 24,9){
             return <Text>Peso normal</Text>
-        } else if (imc > 25 <= 29,9){
+        }
+        if (imc > 25 && imc <= 29,9){
             return <Text>Sobrepeso</Text>
-        } else if (imc > 30 <= 34,9){
-            return <Text>Obesidade grau 1</Text>
-        } else if (imc > 35 <= 39,9){
+        }
+        if (imc > 30 && imc <= 34,9){
+            return <Text>besidade grau 1</Text>
+        }
+        if (imc > 35 && imc <= 39,9){
             return <Text>Obesidade grau 2</Text>
-        } else if (imc > 40){
+        }
+        if (imc > 40){
             return <Text>Obesidade grau 3</Text>
         }
     }
