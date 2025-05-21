@@ -11,34 +11,30 @@ export default function Atividade6() {
     const [peso, setPeso] = useState(null);
     const [altura, setAltura] = useState(null);
     const [imc, setImc] = useState(0.00);
+    const [mensagem, setMensagem] = useState('');
     const mensErro = 'Valores inseridos de forma incorreta!';
 
     function calculaImc() {
         const tmpImc = peso / (altura * altura);
         setImc(tmpImc);
-    }
 
-    const mensagem = () => {
-        if (imc < 18,5){
-            return <Text>Abaixo do peso</Text>
-        }
-        if (imc > 18,5 && imc <= 24,9){
-            return <Text>Peso normal</Text>
-        }
-        if (imc > 25 && imc <= 29,9){
-            return <Text>Sobrepeso</Text>
-        }
-        if (imc > 30 && imc <= 34,9){
-            return <Text>besidade grau 1</Text>
-        }
-        if (imc > 35 && imc <= 39,9){
-            return <Text>Obesidade grau 2</Text>
-        }
-        if (imc > 40){
-            return <Text>Obesidade grau 3</Text>
-        }
+        if (tmpImc < 18.5) {
+         setMensagem('Abaixo do peso');
+       } else if (tmpImc >= 18.5 && tmpImc <= 24.9) {
+         setMensagem('Peso normal');
+       } else if (tmpImc >= 25 && tmpImc <= 29.9) {
+         setMensagem('Sobrepeso');
+       } else if (tmpImc >= 30 && tmpImc <= 34.9) {
+         setMensagem('Obesidade grau I');
+       } else if (tmpImc >= 35 && tmpImc <= 39.9) {
+         setMensagem('Obesidade grau II');
+       } else if (tmpImc >= 40) {
+         setMensagem('Obesidade grau III');
+       } else {
+         setMensagem('Valor fora da faixa conhecida');
+       }
     }
-
+    
     return (
         <View style={styles.container}>
             <Text style={styles.titulo}>Exemplo 6</Text>
