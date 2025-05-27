@@ -15,7 +15,7 @@ const styles = StyleSheet.create({
         margin: RFValue(6),
         fontSize: RFValue(28),
         fontWeight: 'bold',
-        color: '#aaa',
+        color: '#c51162',
     },
     ladoalado: {
         flexDirection: 'row',

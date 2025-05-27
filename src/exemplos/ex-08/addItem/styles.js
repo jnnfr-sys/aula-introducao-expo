@@ -6,15 +6,15 @@ const styles = StyleSheet.create({
         width: '100%', 
         borderWidth: RFValue(1), 
         marginTop: RFValue(10), 
-        borderColor: 'deepskyblue', 
+        borderColor: '#32CD32', 
     }, 
     input: {
         height: RFValue(50),         
-        fontSize: RFValue(16),         
+        fontSize: RFValue(16),        
     },  
     button: {
-        backgroundColor: 'deepskyblue', 
-        padding: RFValue(5)        , 
+        backgroundColor: '#32CD32', 
+        padding: RFValue(5),  
     }, 
     buttonText: {
         color: '#fafafa', 

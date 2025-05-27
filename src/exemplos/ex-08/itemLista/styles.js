@@ -8,7 +8,7 @@ const styles = StyleSheet.create({
         paddingTop: RFValue(10), 
         paddingBottom: RFValue(2), 
         borderBottomWidth: RFValue(3),  
-        borderColor: 'deepskyblue', 
+        borderColor: '#32CD32', 
         width: '100%', 
     },  
     txtItem: {

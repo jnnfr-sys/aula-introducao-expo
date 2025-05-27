@@ -3,7 +3,7 @@ import { RFValue } from 'react-native-responsive-fontsize';
 
 const styles = StyleSheet.create({
     botao: {
-        backgroundColor: '#89ffa5',
+        backgroundColor: '#c51162',
         width: '95%',
         borderRadius: RFValue(20),
     },

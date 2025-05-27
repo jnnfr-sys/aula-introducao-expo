@@ -45,7 +45,7 @@ export default function Atividade6() {
 
             <Text style={styles.imc}>{isNaN(imc) ? mensErro : imc.toFixed(2)}</Text>
 
-            <Text style={[styles.imc, styles.txtMensagem]}>{mensagem()}</Text>
+            <Text style={[styles.imc, styles.txtMensagem]}>{mensagem}</Text>
 
             <Botao calcular={calculaImc}>Calcular</Botao>
         </View>

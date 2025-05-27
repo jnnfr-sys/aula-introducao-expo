@@ -39,7 +39,6 @@ export default function Exemplo8() {
         <View style={styles.container}>
             <Text style={styles.titulo}>Exemplo 8</Text>
             <Text style={styles.cabecalho}>Lista de compras</Text>
-            <AddItem addItems={addItems} />
             <FlatList
                 data={items}
                 renderItem={
@@ -50,6 +49,8 @@ export default function Exemplo8() {
 
                 style={styles.lista}
             />
+            <AddItem addItems={addItems} />
+            
         </View>
     );
 }
