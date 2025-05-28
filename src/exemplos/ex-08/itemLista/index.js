@@ -10,7 +10,7 @@ export default function ItemLista({children, id, deleteItem}) {
             <MaterialIcons 
                 name="delete-outline" 
                 size={26} 
-                color="#FF1493" 
+                color="red"  //#FF1493
                 onPress={() => deleteItem(id)}
             />
         </TouchableOpacity>

@@ -20,7 +20,7 @@ export default function AddItem({ addItems }) {
                     style={styles.button} 
                     onPress={() => {
                         addItems(text);
-                        setText('');
+                        setText(''); // Atividade 8
                         }}>
                 <Text style={styles.buttonText}>
                     <MaterialCommunityIcons 
