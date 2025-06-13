@@ -10,15 +10,15 @@ const styles = StyleSheet.create({
         fontSize: RFValue(20),
         fontWeight: 'bold',
         color: '#4B0082',             //Indigo
-        marginTop: RFValue(10),
+        marginTop: RFValue(15),
         marginBottom: RFValue(20),
     },
     botao: {
         alignItems: 'center',
-        borderWidth: RFValue(3),
+        borderWidth: RFValue(2),
         borderColor: '#4B0082',       //Indigo
         borderRadius: RFValue(10),
-        padding: RFValue(5),
+        padding: RFValue(10),
         width: '80%',
         marginBottom: RFValue(10),
     },

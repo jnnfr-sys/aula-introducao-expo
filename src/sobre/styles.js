@@ -7,7 +7,6 @@ const styles = StyleSheet.create ({
         padding:8,
         flex: 1,
         borderRadius: 20,
-        
     },
     titulo: {
         fontSize: RFPercentage(3),

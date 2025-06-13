@@ -29,6 +29,8 @@ import Sobre from './src/sobre';
 
 import Navegacao from './src/rotas/containerNavegacao';
 
+//import Drawer from './src/rotas/drawer';
+
 export default function App() {
   return (
     <View style={styles.container}>

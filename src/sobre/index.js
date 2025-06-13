@@ -2,7 +2,7 @@ import {View, Text, ImageBackground } from 'react-native';
 
 import styles from './styles';
 
-import imagem from '../../assets/react.png';
+import imagem from '../../assets/navigation.png';
 
 
 function Sobre (){
@@ -10,8 +10,8 @@ function Sobre (){
         <View style={styles.container}>
             <ImageBackground
                 source={imagem}
-                resizeMode="cover"
-                imageStyle={{ opacity: 0.2 }}
+                resizeMode="contain"
+                imageStyle={{ opacity: 0.5 }}
                 style={styles.image}
             >
                 <Text style={styles.titulo}>Sobre</Text>
